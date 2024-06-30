@@ -167,7 +167,8 @@ sudo systemctl status nginx
 
 # If nginx is up and running, you should now have a web server that anyone can access via web browser just by given your external IP address in there browser.
 # For now nginx will show a default page.
-# This default page can be found in "/var/www/html/" and by default is usually named "index.nginx-debian.html". # And the default nginx configuration file that serves this "html" via browser connection is by default in "/etc/nginx/sites-enabled/default".
+# This default page can be found in "/var/www/html/" and by default is usually named "index.nginx-debian.html".
+# And the default nginx configuration file that serves this "html" via browser connection is by default in "/etc/nginx/sites-enabled/default".
 # This file also contains interesting information about nginx that you may wanna check it out.
 ```
 
