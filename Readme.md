@@ -104,7 +104,7 @@ ssh -o PubkeyAuthentication=no <username>@<remoteserver>
 
 ```
 
-Setup a SSH-Config for more identities on your host machine, for an easer ssh-login.
+### Setup a SSH-Config for more identities on your host machine, for an easer ssh-login
 
 ```powershell
 # Navigate to ssh folder on your host machine
@@ -151,7 +151,8 @@ icacls .\<shh_config_file> /grant:r "$($env:USERNAME):(F)"
 ### Log into your v-server, and first update the packages by running this command
 
 ```bash
-# A prompt may pop asking you to select some services that need to be restarted after the update. Just selected some and moved on.
+# A prompt may pop asking you to select some services that need to be restarted after the update.
+# Just selected some and moved on.
 sudo apt update
 ```
 
@@ -164,8 +165,10 @@ sudo apt install nginx -y
 #  After installation finishes you can run this command to check if nginx is up and running. :
 sudo systemctl status nginx
 
-# If nginx is up and running, you should now have a web server that anyone can access via web browser just by given your external IP address in there browser. For now nginx will show a default page.
-# This default page can be found in "/var/www/html/" and by default is usually named "index.nginx-debian.html". And the default nginx configuration file that serves this "html" via browser connection is by default in "/etc/nginx/sites-enabled/default". This file also contains interesting information about nginx that you may wanna check it out.
+# If nginx is up and running, you should now have a web server that anyone can access via web browser just by given your external IP address in there browser.
+# For now nginx will show a default page.
+# This default page can be found in "/var/www/html/" and by default is usually named "index.nginx-debian.html". # And the default nginx configuration file that serves this "html" via browser connection is by default in "/etc/nginx/sites-enabled/default".
+# This file also contains interesting information about nginx that you may wanna check it out.
 ```
 
 >[!TIP]
@@ -256,7 +259,7 @@ git config --global user.name "<your_name>"
 git config --global user.email "<your_email>"
 ```
 
-### Now generate SSH-Key Pairs for Github:
+### Generate SSH-Key Pairs for Github
 
 Basically almost the same as you did in [SSH Login](#ssh-login), but following Github Documentation.
 
@@ -277,7 +280,7 @@ ssh-add ~/.ssh/<ssh_key_file_name>
 cat ~/.ssh/<ssh_key_file_name>.pub
 ```
 
-### Now paste the SSH Public Key into your Github Account settings
+### Paste the SSH Public Key into your Github Account settings
 
 - In the upper-right corner of any page on GitHub, click your profile photo, then click Settings.
 - In the "Access" section of the sidebar, click  SSH and GPG keys.
