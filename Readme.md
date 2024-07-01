@@ -244,7 +244,7 @@ server {
  # Checked your nginx configuration for errors by running:
  nginx -t
 
- # Last, restarte nginx service.
+ # Last, restart nginx service.
  sudo systemctl restart nginx
  ```
 
